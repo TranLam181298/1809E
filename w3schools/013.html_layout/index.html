@@ -10,11 +10,43 @@
             background: orange;
             text-align: center;
         }
+        .main-menu {
+            background: blue;
+            width: 100%;
+        }
+        .main-menu ul {
+            list-style: none;
+            overflow: hidden;
+        }
+        .main-menu ul li{
+            float: left;
+        }
+        .main-menu ul li a{
+            display: inline-block;
+            padding: 10px 20px;
+            background: blue;
+            color: white;
+        }
         footer {
             height: 300px;
             width: 100%;
             background: yellow;
             text-align: center;
+        }
+        .content {
+            overflow: hidden;
+        }
+
+        .content aside {
+            float: left;
+            width: 25%;
+            height: 100%;
+            background: gray;
+        }
+        .content article {
+            float: left;
+            width: 70%;
+            padding: 20px;
         }
     </style>
 </head>
@@ -23,7 +55,7 @@
     <header>
         Header
     </header>
-    <nav>
+    <nav class="main-menu">
         <ul>
             <li><a href="#">The gioi</a> </li>
             <li><a href="#">Thoi su</a> </li>
@@ -33,7 +65,7 @@
             <li><a href="#">Khoa hoc</a> </li>
         </ul>
     </nav>
-    <section>
+    <section class="content">
         <aside>
             <nav>
                 <ul>
