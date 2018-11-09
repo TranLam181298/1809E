@@ -26,13 +26,25 @@
                 e.preventDefault();
                 $('a.menu-nav').parents('ul').css({"border":"1px solid green"});
             });
+
+            $('a#click-here-4').on('click', function (e) {
+                e.preventDefault();
+                $('a.menu-nav').parentsUntil('nav').css({"border":"1px solid green"});
+            });
+
+            $('a#click-here-5').on('click', function (e) {
+                e.preventDefault();
+                $('a.menu-nav').parentsUntil('div.row').css({"border":"1px solid green"});
+            });
         });
     </script>
 </head>
 <body>
-    <a href="#" id="click-here">Click here 1</a>
-    <a href="#" id="click-here-2">Click here 2</a>
-    <a href="#" id="click-here-3">Click here 3</a>
+    <a href="#" id="click-here">Parent</a>
+    <a href="#" id="click-here-2">Parents ko tham số</a>
+    <a href="#" id="click-here-3">Parents có tham số</a>
+    <a href="#" id="click-here-4">Parents until 1</a>
+    <a href="#" id="click-here-5">Parents until 2</a>
     <div class="container">
         <div class="row">
             <div class="col-sm-3">1
